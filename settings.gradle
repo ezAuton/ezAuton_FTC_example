@@ -1,5 +1,4 @@
 include ':FtcRobotController'
 include ':TeamCode'
 
-include ":Core"
-project(":Core").projectDir = new File(settingsDir, './EzAuton/Core')
+includeBuild("ezAuton/")
