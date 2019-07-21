@@ -15,6 +15,8 @@ public class DriveVoltageOpmode extends ActionBasedOpMode {
 
     @Override
     protected void initEz() {
+        Robot.init(hardwareMap);
+
         telemetry.addData("status", "initialized");
     }
 

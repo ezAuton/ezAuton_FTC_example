@@ -20,6 +20,8 @@ public class PurePursuitOpMode extends ActionBasedOpMode {
 
     @Override
     protected void initEz() {
+        Robot.init(hardwareMap);
+
         // Creates a path with the following coordinates. The y axis represents the forwards direction.
         path = new PPWaypoint.Builder()
                 .add(0, 0, 3, 5, -5)
